@@ -73,7 +73,7 @@ OBJS= \
     obj/walletdb.o \
     obj/noui.o
 
-all: TrollCoind.exe
+all: trollcoind.exe
 
 obj/scrypt.o: scrypt.c
 	i586-mingw32msvc-gcc -c $(CFLAGS) -o $@ $^
@@ -86,7 +86,7 @@ DEFS += -DHAVE_BUILD_INFO
 obj/%.o: %.cpp $(HEADERS)
 	i586-mingw32msvc-g++ -c $(CFLAGS) -o $@ $<
 
-TrollCoind.exe: $(OBJS:obj/%=obj/%)
+trollcoind.exe: $(OBJS:obj/%=obj/%)
 	i586-mingw32msvc-g++ $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -100,7 +100,7 @@ test_TrollCoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 
 clean:
 	-rm -f obj/*.o
-	-rm -f TrollCoind.exe
+	-rm -f trollcoind.exe
 	-rm -f obj-test/*.o
 	-rm -f test_TrollCoin.exe
 	-rm -f src/build.h

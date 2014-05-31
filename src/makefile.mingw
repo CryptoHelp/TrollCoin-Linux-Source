@@ -75,7 +75,7 @@ OBJS= \
     obj/noui.o
 
 
-all: TrollCoind.exe
+all: trollcoind.exe
 
 obj/scrypt.o: scrypt.c
 	gcc -c $(CFLAGS) -o $@ $^
@@ -83,7 +83,7 @@ obj/scrypt.o: scrypt.c
 obj/%.o: %.cpp $(HEADERS)
 	g++ -c $(CFLAGS) -o $@ $<
 
-TrollCoind.exe: $(OBJS:obj/%=obj/%)
+trollcoind.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -95,7 +95,7 @@ test_TrollCoin.exe: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
 	g++ $(CFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework $(LIBS)
 
 clean:
-	-del /Q TrollCoind test_TrollCoin
+	-del /Q trollcoind test_TrollCoin
 	-del /Q obj\*
 	-del /Q obj-test\*
 	-del /Q build.h
