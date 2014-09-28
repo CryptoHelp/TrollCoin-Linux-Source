@@ -1,6 +1,8 @@
 TrollCoin integration/staging tree
 ================================
 
+POD-CryptoAsian
+
 http://www.trollcoinbase.com
 
 Copyright (c) 2009-2014 Bitcoin Developers
@@ -11,7 +13,7 @@ What is TrollCoin?
 ----------------
 
 TrollCoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 1 minute block targets
+ - 2 minute block targets
   - ~9 billion total coins
  - 1 blocks to retarget difficulty
 
@@ -43,7 +45,7 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/TrollCoinz/TrollCoin/tags) are created
+completely stable. [Tags](https://github.com/TrollCoin-Cryptocurrency/TrollCoin-Linux-Source/tags) are created
 regularly to indicate new official, stable release versions of TrollCoin.
 
 Testing
