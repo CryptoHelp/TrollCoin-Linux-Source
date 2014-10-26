@@ -8,6 +8,7 @@ http://www.trollcoinbase.com
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 TrollCoin Developers
 TrollCoin Wallet 1.0 by Spencer Lievens
+TrollCoin Wallet 1.3 by Spencer Lievens
 
 What is TrollCoin?
 ----------------
