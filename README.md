@@ -1,6 +1,5 @@
 TrollCoin integration/staging tree
 ================================
-
 POD-CryptoAsian
 
 http://www.trollcoinbase.com
