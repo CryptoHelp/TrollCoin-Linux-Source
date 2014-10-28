@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = trollcoin-qt
 macx:TARGET = "TrollCoin-Qt"
-VERSION = 1.3.0.0
+VERSION = 1.4.0.0
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE USE_IPV6
